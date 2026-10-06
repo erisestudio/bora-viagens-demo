@@ -1,0 +1,7 @@
+/* Consistent expand controls: plus when closed, minus when open. */
+.select-chevron,.passenger-chevron{position:relative;display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:rgba(83,119,76,.09);color:inherit;flex-shrink:0;font-size:0!important;transform:none!important}
+.select-chevron:before,.select-chevron:after,.passenger-chevron:before,.passenger-chevron:after{content:"";position:absolute;width:10px;height:1.5px;background:currentColor;border-radius:2px;transition:transform .18s,opacity .18s}
+.select-chevron:after,.passenger-chevron:after{transform:rotate(90deg)}
+.select-trigger[aria-expanded=true] .select-chevron:after,.passenger-item[open] .passenger-chevron:after{transform:rotate(0);opacity:0}
+.faq-item summary{display:flex;align-items:center;justify-content:space-between;gap:20px;list-style:none}.faq-item summary::-webkit-details-marker{display:none}.faq-item summary:after{content:"+";display:grid;place-items:center;width:26px;height:26px;flex-shrink:0;border-radius:50%;background:rgba(83,119,76,.09);font-size:20px;font-weight:400}.faq-item[open] summary:after{content:"−"}
+@media(prefers-reduced-motion:reduce){.select-chevron:after,.passenger-chevron:after{transition:none}}

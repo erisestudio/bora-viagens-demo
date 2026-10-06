@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800;900&display=swap');
+/* Condensed expedition titles, with a slab serif accent. Body text stays calm. */
+:root{--font-expedition:'Barlow Condensed','Arial Narrow',sans-serif;--font-terrain:'Roboto Slab',Georgia,serif}
+.hero h1{font-family:var(--font-expedition);font-weight:800;text-transform:uppercase;letter-spacing:.005em;font-size:clamp(68px,7.4vw,106px);line-height:.92;max-width:720px;margin:24px 0 28px}
+.hero h1 em{font-family:var(--font-terrain);font-weight:900;font-style:normal;font-size:.73em;letter-spacing:-.055em;display:inline-block;margin-top:8px;line-height:1.12}
+.section-title h2,.excursion-heading h2,.excursion-transport h2,.excursion-about h2,.excursion-last-call h2,.page-heading h1,.detail-heading h1,.past-trip-heading h2{font-family:var(--font-expedition);font-weight:700;text-transform:uppercase;letter-spacing:.012em;line-height:1.03}
+.section-title h2,.excursion-heading h2,.excursion-transport h2,.excursion-about h2{font-size:45px}
+.page-heading h1,.detail-heading h1{font-size:58px}.excursion-last-call h2{font-size:68px}
+.trip-card .card-content h3,.excursion-destination h3,.past-trip-summary h3{font-family:var(--font-expedition);font-weight:700;letter-spacing:.015em;font-size:30px;line-height:1.1}
+.excursion-destination h3{font-size:29px}.excursion-last-call .eyebrow{letter-spacing:2px}
+@media(max-width:700px){.hero h1{font-size:58px;line-height:.94;letter-spacing:.005em;margin:22px 0 25px}.hero h1 em{font-size:.73em;margin-top:7px}.section-title h2,.excursion-heading h2,.excursion-transport h2,.excursion-about h2{font-size:35px;letter-spacing:.01em}.page-heading h1,.detail-heading h1{font-size:44px}.excursion-last-call h2{font-size:47px}.trip-card .card-content h3{font-size:31px}.excursion-destination h3{font-size:28px}.past-trip-summary h3{font-size:27px}}
+@media(max-width:360px){.hero h1{font-size:48px}.section-title h2,.excursion-heading h2{font-size:32px}}
+
+/* Lighter hero headline; the yellow slab accent keeps its personality. */
+.hero h1{font-family:'Manrope',Arial,sans-serif;font-weight:500;font-size:clamp(54px,5.9vw,84px);letter-spacing:-.045em;line-height:1.06;text-transform:none}
+.hero h1 em{font-family:var(--font-terrain);font-weight:900;text-transform:uppercase;font-size:.83em;letter-spacing:-.055em;line-height:1.12;margin-top:10px}
+@media(max-width:700px){.hero h1{font-size:44px;line-height:1.08;letter-spacing:-.045em}.hero h1 em{font-size:.88em}}
+@media(max-width:360px){.hero h1{font-size:37px}}
