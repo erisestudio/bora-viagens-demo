@@ -1,0 +1,1 @@
+(()=>{const set=()=>document.documentElement.style.setProperty('--scrollbar-width',`${innerWidth-document.documentElement.clientWidth}px`);set();addEventListener('resize',set);new ResizeObserver(set).observe(document.documentElement)})();

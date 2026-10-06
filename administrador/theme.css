@@ -1,0 +1,105 @@
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.141 0.005 285.823);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.141 0.005 285.823);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.141 0.005 285.823);
+  --primary: oklch(0.527 0.154 150.069);
+  --primary-foreground: oklch(0.982 0.018 155.826);
+  --secondary: oklch(0.967 0.001 286.375);
+  --secondary-foreground: oklch(0.21 0.006 285.885);
+  --muted: oklch(0.967 0.001 286.375);
+  --muted-foreground: oklch(0.552 0.016 285.938);
+  --accent: oklch(0.967 0.001 286.375);
+  --accent-foreground: oklch(0.21 0.006 285.885);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.92 0.004 286.32);
+  --input: oklch(0.92 0.004 286.32);
+  --ring: oklch(0.705 0.015 286.067);
+  --chart-1: oklch(0.871 0.006 286.286);
+  --chart-2: oklch(0.552 0.016 285.938);
+  --chart-3: oklch(0.442 0.017 285.786);
+  --chart-4: oklch(0.37 0.013 285.805);
+  --chart-5: oklch(0.274 0.006 286.033);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.141 0.005 285.823);
+  --sidebar-primary: oklch(0.627 0.194 149.214);
+  --sidebar-primary-foreground: oklch(0.982 0.018 155.826);
+  --sidebar-accent: oklch(0.967 0.001 286.375);
+  --sidebar-accent-foreground: oklch(0.21 0.006 285.885);
+  --sidebar-border: oklch(0.92 0.004 286.32);
+  --sidebar-ring: oklch(0.705 0.015 286.067);
+  --ink: var(--foreground);
+  --green: var(--primary);
+  --orange: var(--primary);
+  --orange-dark: var(--primary);
+  --line: var(--border);
+  --paper: var(--card);
+  --bg: var(--background);
+  color-scheme: light;
+}
+.dark {
+  --background: oklch(0.141 0.005 285.823);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.21 0.006 285.885);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.21 0.006 285.885);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.448 0.119 151.328);
+  --primary-foreground: oklch(0.982 0.018 155.826);
+  --secondary: oklch(0.274 0.006 286.033);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.274 0.006 286.033);
+  --muted-foreground: oklch(0.705 0.015 286.067);
+  --accent: oklch(0.274 0.006 286.033);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.552 0.016 285.938);
+  --chart-1: oklch(0.871 0.006 286.286);
+  --chart-2: oklch(0.552 0.016 285.938);
+  --chart-3: oklch(0.442 0.017 285.786);
+  --chart-4: oklch(0.37 0.013 285.805);
+  --chart-5: oklch(0.274 0.006 286.033);
+  --sidebar: oklch(0.21 0.006 285.885);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.723 0.219 149.579);
+  --sidebar-primary-foreground: oklch(0.982 0.018 155.826);
+  --sidebar-accent: oklch(0.274 0.006 286.033);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.552 0.016 285.938);
+  color-scheme: dark;
+}
+body{background:var(--background);color:var(--foreground)}
+.site-header,.search-panel,.trip-card,.booking-aside,.empty-state,.reservation-card,.stat,.admin-panel,.icon-button,.filter,.button.secondary{background:var(--card);color:var(--card-foreground)}
+input,select,textarea,.control{background:var(--card);color:var(--foreground);border-color:var(--input)}
+.demo-bar,.button,.button.orange{background:var(--primary);color:var(--primary-foreground)}
+.button:hover,.button.orange:hover{background:color-mix(in oklch,var(--primary) 88%,var(--foreground))}
+.button.secondary:hover,.filter:hover{background:var(--accent);color:var(--accent-foreground)}
+.filter.active{background:var(--primary);color:var(--primary-foreground);border-color:var(--primary)}
+.hero-chip,.category-badge,.seats-badge{background:var(--card);color:var(--card-foreground)}
+.seats-badge.low{background:var(--card);color:var(--destructive)}
+.help-strip,.admin-tip,.booking-summary,.success .reference,.compact-meta span,.text-tag,.money-row.total,.fact,th{background:var(--muted);color:var(--foreground)}
+.help-strip p,.admin-tip,.money-row p,.money-row small,th{color:var(--muted-foreground)}
+.track{background:var(--muted)}.track i{background:var(--primary)}
+.admin-sidebar{background:var(--sidebar);color:var(--sidebar-foreground);border-color:var(--sidebar-border)}
+.admin-sidebar button.active{background:var(--sidebar-accent);color:var(--sidebar-primary)}
+.admin-sidebar button{color:var(--muted-foreground)}
+.status,.success-symbol{background:color-mix(in oklch,var(--primary) 12%,var(--card));color:var(--foreground)}
+.status.pending{background:var(--secondary);color:var(--secondary-foreground)}
+.status.cancelled{background:color-mix(in oklch,var(--destructive) 12%,var(--card));color:var(--destructive)}
+.status.demo{background:var(--muted);color:var(--muted-foreground)}
+.table-action{color:var(--foreground);border-color:var(--border)}
+dialog{background:var(--popover);color:var(--popover-foreground)}
+#toast{background:var(--foreground);color:var(--background)}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline-color:var(--ring)}
+.hero-photo:after{background:linear-gradient(0deg,#0009,transparent 65%)}
+.hero-photo img,.hero-photo:after,.detail-cover,.trip-card,.search-panel,.help-strip,.booking-aside,.empty-state,.reservation-card,.admin-panel,.stat,dialog{border-radius:var(--radius)}
+.button,.organizer-link,.control,.table-action,.fact,.booking-summary,.admin-tip{border-radius:calc(var(--radius) - 2px)}
+.theme-toggle{background:var(--secondary);color:var(--secondary-foreground);border:1px solid var(--border);border-radius:calc(var(--radius) - 2px);padding:9px 11px;font-size:12px;min-height:38px;white-space:nowrap}
+.header-actions{display:flex;align-items:center;gap:9px}
+@media(max-width:520px){.header-inner{gap:10px}.header-actions{gap:6px}.organizer-link{font-size:11px;padding:9px}.theme-toggle{font-size:11px;padding:8px;min-height:36px}.logo{font-size:29px}}
